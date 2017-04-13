@@ -1,0 +1,9 @@
+cmake_minimum_required(VERSION 3.5)
+project(8080-disassembler)
+
+set(CMAKE_C_STANDARD 99)
+set(CMAKE_MODULE_PATH ${CMAKE_MODULE_PATH} "${PROJECT_SOURCE_DIR}/cmake")
+set(CMAKE_RUNTIME_OUTPUT_DIRECTORY "${CMAKE_CURRENT_SOURCE_DIR}")
+
+set(SOURCE_FILES main.c)
+add_executable(${CMAKE_PROJECT_NAME} ${SOURCE_FILES})
